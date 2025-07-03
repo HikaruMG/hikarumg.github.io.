@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@tailwind utilities;
+@custom-variant dark (&:where(.dark, .dark *));
+
+*{
+  font-family: Outfit;
+}
+
+
+.bg-lightHover {
+  background-color: #fcf4ff;
+}
+
+.hover\:bg-lightHover:hover {
+  background-color: #fcf4ff;
+}
+
+.bg-darkHover {
+  background-color: #2a004a;
+}
+
+.dark\:bg-darkHover {
+  background-color: #2a004a;
+}
+
+.hover\:bg-darkHover:hover {
+  background-color: #2a004a;
+}
+
+.dark\:hover\:bg-darkHover:hover {
+  background-color: #2a004a;
+}
+
+.shadow-black {
+  box-shadow: 4px 4px 0 #000;
+}
+
+.hover\:shadow-black:hover {
+  box-shadow: 4px 4px 0 #000;
+}
+
+.shadow-white {
+  box-shadow: 4px 4px 0 #fff;
+}
+
+.font-Ovo {
+  font-family: 'Ovo', serif;
+}
+
+.font-Outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+.grid-cols-auto-fill {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+
+.dark .dark\:bg-darkTheme {
+  background-color: #11001F;
+}
+
+.dark .custom-hover:hover {
+  background-color: #2a004a;
+  box-shadow: 4px 4px 0 #fff;
+}
+
+.dark .darkThemehover:hover {
+  background-color: #2a004a;
+}
+
+.dark .darkTheme30 {
+  background-color: rgba(42, 0, 74, 0.3);
+
+}
+
