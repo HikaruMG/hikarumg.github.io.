@@ -174,7 +174,7 @@ export const workData = [
     {
         title: 'DurAini',
         description: 'LineBot: Object Detection | Gold Medal',
-        bgImage: '/IMG_0746.jpg',
+        bgImage: '/IMG_0746.png',
         link: 'https://github.com/HikaruMG/DurAIni',
         button: true
     },
