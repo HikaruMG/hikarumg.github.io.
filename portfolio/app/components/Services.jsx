@@ -46,9 +46,9 @@ const Services = () => {
                     <Image src={icon} alt='' className='w-10'/>
                     <h3 className='text-lg my-4 text-gray-700 dark:text-white'>{title}</h3>
                     <p className='text-gray-600 text-sm leading-5 dark:text-white/80'>{description}</p>
-                    <a href={link}>
+                    {/* <a href={link}>
                         Read More <Image alt='' src={assets.right_arrow} className='w-4'/>
-                    </a>
+                    </a> */}
                </motion.div> 
             ))}
 

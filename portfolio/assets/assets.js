@@ -165,14 +165,6 @@ export const certificateList = [
 
 export const workData = [
     {
-        title: 'WarnGuard',
-        description: 'Hardware & Inno-Thinking Project',
-        bgImage: '/IMG_0749.jpg',
-        link: 'https://github.com/HikaruMG/CPE-WarnGuard',
-        button: true,
-        type : 'project'
-    },
-    {
         title: 'DurAini',
         description: 'LineBot: Leaf Disease Detection | Gold Medal',
         bgImage: '/IMG_0746.png',
@@ -180,6 +172,15 @@ export const workData = [
         button: true,
         type : 'project'
     },
+    {
+        title: 'WarnGuard',
+        description: 'Hardware & Inno-Thinking Project',
+        bgImage: '/IMG_0749.jpg',
+        link: 'https://github.com/HikaruMG/CPE-WarnGuard',
+        button: true,
+        type : 'project'
+    },
+    
     {
         title: 'FoodCritic',
         description: 'Restaurant review web application. [Co-Worker]',
@@ -206,7 +207,7 @@ export const workData = [
     },
     {
         title: 'KUTECH-BootCamp2025',
-        description: 'TA : DataSci',
+        description: 'TA : DataSci/ML',
         bgImage: '/kuthbc.png',
         link: 'https://tech.nisit.ku.ac.th/',
         button: true,
