@@ -169,28 +169,48 @@ export const workData = [
         description: 'Hardware & Inno-Thinking Project',
         bgImage: '/IMG_0749.jpg',
         link: 'https://github.com/HikaruMG/CPE-WarnGuard',
-        button: true
+        button: true,
+        type : 'project'
     },
     {
         title: 'DurAini',
-        description: 'LineBot: Object Detection | Gold Medal',
+        description: 'LineBot: Leaf Disease Detection | Gold Medal',
         bgImage: '/IMG_0746.png',
         link: 'https://github.com/HikaruMG/DurAIni',
-        button: true
+        button: true,
+        type : 'project'
+    },
+    {
+        title: 'FoodCritic',
+        description: 'Restaurant review web application. [Co-Worker]',
+        bgImage: '/fc.png',
+        link: 'https://github.com/HikaruMG/HikaruMG.github.io',
+        button: true,
+        type : 'project'
     },
     {
         title: 'ExxonMobil Bootcathon 2024',
         description: 'Analytic/ML',
         bgImage: '/IMG_20240629_123952.jpg',
-        link: '',
-        button: false
+        link: 'https://corporate.exxonmobil.com/locations/thailand/thailand-news-and-views/viewpoints-and-perspectives/2024/202408-exxonmobil-bootcathon',
+        button: true,
+        type : 'competition'
     },
     {
         title: 'CUHighTech-2024',
         description: 'IT Service Management (ITSM)',
         bgImage: '/IMG_0748.jpg',
-        link: '',
-        button: false
+        link: 'https://www.opl.to/hightech.chula?fbclid=IwY2xjawLUZflleHRuA2FlbQIxMABicmlkETFZbzIyOERlT1Nva01GRkdWAR6VVupowYMjo9JYhGu0L9-XxI3ho6ykOsISC94a2FvzS0saOMPgUDh7cmepiA_aem_FjLhvsMWkyy1xo_s-Ak4Tw',
+        button: true,
+        type : 'competition'
+    },
+    {
+        title: 'KUTECH-BootCamp2025',
+        description: 'TA : DataSci',
+        bgImage: '/kuthbc.png',
+        link: 'https://tech.nisit.ku.ac.th/',
+        button: true,
+        type : 'competition'
     }
     
     
