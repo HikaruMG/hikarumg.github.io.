@@ -9,6 +9,7 @@ import Person from "./components/Person";
 import Services from "./components/Services";
 import Showcase from "./components/Showcase";
 import Work from "./components/Work";
+import E404 from "./components/E404";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -46,6 +47,7 @@ export default function Home() {
     <Contact isDarkMode={isDarkMode}/>
     <Footer isDarkMode={isDarkMode}/>
     {/* <Showcase isDarkMode={isDarkMode}/> */}
+    {/* <E404 isDarkMode={isDarkMode}/> */}
     </>
   );
 }
