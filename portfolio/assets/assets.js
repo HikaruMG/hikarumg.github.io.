@@ -77,6 +77,7 @@ import dat3 from './Certificate/certDAT0184_page-0001.jpg';
 
 
 
+
 export const assets = {
     user_image,
     code_icon,
@@ -207,9 +208,17 @@ export const workData = [
     },
     {
         title: 'KUTECH-BootCamp2025',
-        description: 'TA : DataSci/ML',
+        description: 'TA : DataSci/ML @KU',
         bgImage: '/kuthbc.png',
         link: 'https://tech.nisit.ku.ac.th/',
+        button: true,
+        type : 'competition'
+    },
+    {
+        title: 'KUTECH-TechCamp#4',
+        description: 'Mentor & Staff @HWP',
+        bgImage: '/hwpkutech.jpg',
+        link: 'https://hwp.ac.th/image/16223/?fbclid=IwY2xjawLZ_bdleHRuA2FlbQIxMABicmlkETF6aDFsMWN4aXlUMm5lUGFOAR4ASHLdb2VnQAghHCU1_i0LXV4Gh45Ha3d9Jlwn9XO-RLLLuFsX6OqP6VHgMg_aem_FLFmAeL4c8d99HgCrQA5Ag',
         button: true,
         type : 'competition'
     }
