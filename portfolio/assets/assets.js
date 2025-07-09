@@ -74,6 +74,9 @@ import jpone from './Certificate/10 JIRAPHAT SRITAWEE_page-0001.jpg';
 import Exmo from './Certificate/Jiraphat-Certificate_page-0001.jpg';
 import cutech from './Certificate/participated-จิรพัฒน์ ศรีทวี_page-0001.jpg';
 import dat3 from './Certificate/certDAT0184_page-0001.jpg';
+import skoolsql from './Certificate/skoolsql.jpg';
+import skoolpd from './Certificate/skoolpd.jpg';
+import skoolwebscape from './Certificate/skolwebscap.jpg';
 
 
 
@@ -158,6 +161,12 @@ export const certificateList = [
   { title: "Certificate 19", image: Exmo, year: 2024 },
   { title: "Certificate 20", image: cutech, year: 2024 },
   { title: "Certificate 21", image: dat3, year: 2024 },
+    { title: "Certificate 22", image: skoolsql, year: 2024 },
+    { title: "Certificate 23", image: skoolpd, year: 2024 },
+    { title: "Certificate 24", image: skoolwebscape, year: 2024 },
+    
+    { title: "Certificate 25", image: jpone, year: 2025 },
+
 
   { title: "Certificate 18", image: jpone, year: 2025 },
 
