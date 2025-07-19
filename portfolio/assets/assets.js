@@ -168,7 +168,7 @@ export const certificateList = [
     { title: "Certificate 25", image: jpone, year: 2025 },
 
 
-  { title: "Certificate 18", image: jpone, year: 2025 },
+//   { title: "Certificate 18", image: jpone, year: 2025 },
 
   { title: "Certificate 17", image: inno, year: "Award" },
 ];
