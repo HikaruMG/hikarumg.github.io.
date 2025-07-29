@@ -57,24 +57,26 @@ const Certificate = () => {
         whileInView={{ opacity: 1}}
         transition={{ duration: 0.6, delay: 0.9 }}
         className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 my-10 dark:text-black'>
-            {filteredCerts.map((cert, index) =>(
-                <motion.div
-                whileHover={{scale: 1.15}}
-                transition={{duration: 0.3}}
-                className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-                key={index}>
-                    
-                    <div className=' w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 
-                    flex items-center justify-between duration-500 gruop-hover:-translate-y-1 group-hover:bottom-7'>
-                        
-                        <a href={cert.image.src} target="_blank" rel="noopener noreferrer">
-                            <Image src={cert.image} alt="" className='w-full h-full'/>
-                        </a>
-                    </div>
-                    
-                </motion.div>
-            ))}
-    </motion.div >
+          {filteredCerts.map((cert, index) =>(
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+              className="rounded-lg relative cursor-pointer group"
+              key={index}>
+              <div className="rounded-md overflow-hidden">
+                <a href={cert.image.src} target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src={cert.image}
+                    alt={cert.title}
+                    className="w-full h-auto rounded-lg"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    style={{ objectFit: 'contain' }}
+                  />
+                </a>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div >
     </div>
   );
 };

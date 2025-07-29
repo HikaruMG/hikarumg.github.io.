@@ -195,7 +195,7 @@ export const workData = [
         title: 'FoodCritic',
         description: 'Restaurant review web application. [Co-Worker]',
         bgImage: '/fc.png',
-        link: 'https://github.com/HikaruMG/HikaruMG.github.io',
+        link: 'https://github.com/HikaruMG/FoodCritic',
         button: true,
         type : 'project'
     },
