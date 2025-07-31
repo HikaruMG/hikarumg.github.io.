@@ -51,6 +51,8 @@ import dataj from './monitor.png';
 import ai from './ai-technology.png';
 import web from './app.png';
 import prog from './developer.png';
+import EXC from './Excel1.png';
+import JPKU from './jpku.jpg';
 
 import githubfordev from './Certificate/Cer.githubDev.png';
 import kmutt_hacka from './Certificate/Ce.KMUTT-Hackathon.png';
@@ -134,7 +136,9 @@ export const assets = {
     dataj,
     ai,
     web,
-    prog
+    prog,
+    EXC,
+    JPKU
 
 };
 
@@ -158,9 +162,11 @@ export const certificateList = [
   { title: "Certificate 1", image: nsc2022, year: 2023 },
   { title: "Certificate 11", image: githubfordev, year: 2023 },
 
+
   { title: "Certificate 19", image: Exmo, year: 2024 },
   { title: "Certificate 20", image: cutech, year: 2024 },
   { title: "Certificate 21", image: dat3, year: 2024 },
+  
     { title: "Certificate 22", image: skoolsql, year: 2024 },
     { title: "Certificate 23", image: skoolpd, year: 2024 },
     { title: "Certificate 24", image: skoolwebscape, year: 2024 },
@@ -171,6 +177,7 @@ export const certificateList = [
 //   { title: "Certificate 18", image: jpone, year: 2025 },
 
   { title: "Certificate 17", image: inno, year: "Award" },
+  { title: "Certificate 18", image: JPKU, year: "Award" }
 ];
 
 export const workData = [
@@ -253,7 +260,7 @@ export const toolsData = [
 ];
 
 export const Languages = [
-    assets.PY, assets.C, assets.CPP
+    assets.PY,assets.JS, assets.C, assets.CPP
 ];
 
 export const LibrariesAndFrameworks = [
@@ -261,5 +268,5 @@ export const LibrariesAndFrameworks = [
 ];
 
 export const Databases = [
-    assets.vscode, assets.git, assets.DK, assets.firebase, assets.mySQL, assets.LK
+    assets.EXC, assets.vscode, assets.git, assets.DK, assets.firebase, assets.mySQL, assets.LK
 ];

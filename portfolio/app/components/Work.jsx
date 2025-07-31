@@ -5,7 +5,7 @@ import { assets, workData } from '@/assets/assets'
 import { motion } from 'framer-motion'
 
 const Work = ({ isDarkMode }) => {
-  const [selectedType, setSelectedType] = useState('project')
+  const [selectedType, setSelectedType] = useState('competition')
   const filteredData = workData.filter(item => item.type === selectedType)
 
   return (
