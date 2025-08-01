@@ -207,6 +207,14 @@ export const workData = [
         type : 'project'
     },
     {
+        title: 'DAT3 - DashBoard',
+        description: 'Data Analytics & Visualization Project',
+        bgImage: '/Jiraphat-Sheet_page-0001.jpg',
+        link: 'https://lookerstudio.google.com/s/qqZbOE_OkmI',
+        button: true,
+        type : 'project'
+    },
+    {
         title: 'ExxonMobil Bootcathon 2024',
         description: 'Analytic/ML',
         bgImage: '/IMG_20240629_123952.jpg',
