@@ -207,12 +207,29 @@ export const workData = [
         type : 'project'
     },
     {
+        title: 'ExxonMobil Project Analytic/ML',
+        description: 'Project from ExxonMobil Bootcathon 2024',
+        bgImage: '/tableau_Exxon.png',
+        link: 'https://lookerstudio.google.com/s/qqZbOE_OkmI',
+        button: true,
+        type : 'project'
+    },
+    {
         title: 'DAT3 - DashBoard',
         description: 'Data Analytics & Visualization Project',
         bgImage: '/Jiraphat-Sheet_page-0001.jpg',
         link: 'https://lookerstudio.google.com/s/qqZbOE_OkmI',
         button: true,
         type : 'project'
+    },
+    
+    {
+        title: 'KU-JCC',
+        description: ' Idea Design – Developed a gait analysis system using CCTV to help prevent accidents among elderly people living alone.',
+        bgImage: '/KUJCC.jpg',
+        link: 'https://www.facebook.com/share/p/179trY7nBC/',
+        button: true,
+        type : 'competition'
     },
     {
         title: 'ExxonMobil Bootcathon 2024',
