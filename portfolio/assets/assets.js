@@ -140,6 +140,7 @@ export const assets = {
     EXC,
     JPKU
 
+
 };
 
 export const certificateList = [
@@ -206,11 +207,21 @@ export const workData = [
         button: true,
         type : 'project'
     },
+
+    {
+        title: 'SLOWoRK',
+        description: 'Internship Platform Web Application',
+        bgImage: '/slowork.png',
+        link: 'https://slowork.disorder3.com/',
+        button: true,
+        type : 'project'
+    },
+
     {
         title: 'ExxonMobil Project Analytic/ML',
         description: 'Project from ExxonMobil Bootcathon 2024',
         bgImage: '/tableau_Exxon.png',
-        link: 'https://lookerstudio.google.com/s/qqZbOE_OkmI',
+        link: 'https://corporate.exxonmobil.com/locations/thailand/thailand-news-and-views/viewpoints-and-perspectives/2024/202408-exxonmobil-bootcathon',
         button: true,
         type : 'project'
     },
@@ -223,14 +234,25 @@ export const workData = [
         type : 'project'
     },
     
+    
+    {
+        title: 'CMCC I Capital Market Case',
+        description: 'Idea Pitching - Advertisement by AI and Advertisement X Riders',
+        bgImage: '/blueoc.png',
+        link: 'https://www.canva.com/design/DAG5QsfWGjE/i7NOG2k5ODhRIYMYN7d5GQ/edit?utm_content=DAG5QsfWGjE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
+        button: true,
+        type : 'competition'
+    },
+
     {
         title: 'KU-JCC',
-        description: ' Idea Design – Developed a gait analysis system using CCTV to help prevent accidents among elderly people living alone.',
+        description: ' Idea Pitching – Developed a gait analysis system using CCTV to help prevent accidents among elderly people living alone.',
         bgImage: '/KUJCC.jpg',
         link: 'https://www.facebook.com/share/p/179trY7nBC/',
         button: true,
         type : 'competition'
     },
+
     {
         title: 'ExxonMobil Bootcathon 2024',
         description: 'Analytic/ML',
@@ -255,6 +277,7 @@ export const workData = [
         button: true,
         type : 'competition'
     },
+
     {
         title: 'KUTECH-TechCamp#4',
         description: 'Mentor & Staff @HWP',
@@ -262,16 +285,29 @@ export const workData = [
         link: 'https://hwp.ac.th/image/16223/?fbclid=IwY2xjawLZ_bdleHRuA2FlbQIxMABicmlkETF6aDFsMWN4aXlUMm5lUGFOAR4ASHLdb2VnQAghHCU1_i0LXV4Gh45Ha3d9Jlwn9XO-RLLLuFsX6OqP6VHgMg_aem_FLFmAeL4c8d99HgCrQA5Ag',
         button: true,
         type : 'competition'
+    },
+
+    {
+        title: 'CPSK-INIT ME #6',
+        description: 'Mentor & Staff @CPEKU',
+        bgImage: '/init.jpg',
+        link: 'https://hwp.ac.th/image/16223/?fbclid=IwY2xjawLZ_bdleHRuA2FlbQIxMABicmlkETF6aDFsMWN4aXlUMm5lUGFOAR4ASHLdb2VnQAghHCU1_i0LXV4Gh45Ha3d9Jlwn9XO-RLLLuFsX6OqP6VHgMg_aem_FLFmAeL4c8d99HgCrQA5Ag',
+        button: true,
+        type : 'competition'
     }
+
+    
+
+    
     
     
 ]
 
 export const serviceData = [
-    { icon: assets.dataj, title: 'Data Science & Visualization', description: 'Analyze data and create impactful dashboards...', link: '' },
-    { icon: assets.ai, title: 'AI Developer', description: 'Build and train models for predictions and automation...', link: '' },
-    { icon: assets.web, title: 'Web Applications', description: 'Develop interactive, data-powered web apps...', link: '' },
-    { icon: assets.prog, title: 'Programming', description: 'Proficient in Python, with strong problem-solving skills...', link: '' },
+    { icon: assets.dataj, title: 'Data Science & Visualization', description: 'Analyze data and create impactful dashboards', link: '' },
+    { icon: assets.ai, title: 'AI Developer', description: 'Build and train models for predictions and automation', link: '' },
+    { icon: assets.web, title: 'Web Applications', description: 'Develop interactive, data-powered web apps', link: '' },
+    { icon: assets.prog, title: 'Programming', description: 'Proficient in Python, with strong problem-solving skills', link: '' },
 ]
 
 export const infoList = [
