@@ -211,7 +211,7 @@ export const workData = [
     {
         title: 'SLOWoRK',
         description: 'Internship Platform Web Application',
-        bgImage: '/slowork.png',
+        bgImage: '/Slowork1.png',
         link: 'https://slowork.disorder3.com/',
         button: true,
         type : 'project'
