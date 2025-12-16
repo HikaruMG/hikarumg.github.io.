@@ -79,10 +79,36 @@ const Work = ({ isDarkMode }) => {
             key={index}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
-            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-            style={{ backgroundImage: `url(${project.bgImage})` }}
+            className="aspect-square rounded-lg relative cursor-pointer group overflow-hidden bg-gray-200"
           >
-            <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:-translate-y-1 group-hover:bottom-7'>
+            {/* Image layer (supports isFeatured for object-contain) */}
+            <div className='absolute inset-0'>
+              {project.isFeatured ? (
+                <Image
+                  src={project.bgImage}
+                  alt={project.title}
+                  fill
+                  className='object-contain'
+                  sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px'
+                />
+              ) : (
+                <div 
+                  className='absolute inset-0 bg-cover bg-center'
+                  style={{ backgroundImage: `url(${project.bgImage})` }}
+                />
+              )}
+            </div>
+
+            {/* Hover hint - subtle badge in corner */}
+            <div className='absolute inset-0 flex items-end justify-end p-3 pointer-events-none'>
+              <div className='opacity-100 group-hover:opacity-0 transition-opacity duration-300 bg-white/90 dark:bg-black/90 backdrop-blur-sm px-3 py-1.5 rounded-full'>
+                <p className='text-xs sm:text-sm font-semibold text-black dark:text-white whitespace-nowrap font-Ovo'>
+                  Hover for details ✨
+                </p>
+              </div>
+            </div>
+
+            <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
               <div>
                 <h2 className='font-semibold text-black'>{project.title}</h2>
                 <p className='text-sm text-gray-700'>{project.description}</p>

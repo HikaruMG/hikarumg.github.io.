@@ -39,10 +39,11 @@ const About = ({isDarkMode}) => {
         transition={{ duration: 0.6, delay: 0.8 }}
         className='flex-1'>
             <p className='mb-10 max-w-2xl font-Ovo'>
-              I'm a Computer Engineering student at Kasetsart University with a strong interest in Data Science, 
-              particularly in Machine Learning, Data Visualization, and Image Processing.
-              I'm currently seeking an internship to apply and expand my skills in a real-world environment. 
-              I'm eager to learn, work well under pressure, and enjoy collaborating with others to solve complex problems.
+              Hello, I'm a Computer Engineering student at Kasetsart University with a strong interest 
+              in software development, particularly in Python, C++, and image processing. 
+              I'm currently seeking an internship where I can apply my programming skills, 
+              build real-world software solutions, and further strengthen my technical foundation. 
+              Highly motivated, able to work under pressure, and effective in collaborative problem-solving environments.
             </p>
 
             <motion.ul

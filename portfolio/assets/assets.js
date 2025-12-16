@@ -1,4 +1,4 @@
-import user_image from './user-image.png';
+import user_image from './user-image.jpg';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -53,6 +53,10 @@ import web from './app.png';
 import prog from './developer.png';
 import EXC from './Excel1.png';
 import JPKU from './jpku.jpg';
+import cen_icon from './centralized.png';
+import tools_icon from './computer.png';
+import SonyHKT from './SonyHKT2025.jpg';
+import HCUsl from './IMG_0748sl.jpg';
 
 import githubfordev from './Certificate/Cer.githubDev.png';
 import kmutt_hacka from './Certificate/Ce.KMUTT-Hackathon.png';
@@ -83,7 +87,11 @@ import skoolwebscape from './Certificate/skolwebscap.jpg';
 
 
 
+
 export const assets = {
+    HCUsl,
+    SonyHKT,
+    tools_icon,
     user_image,
     code_icon,
     code_icon_dark,
@@ -138,7 +146,9 @@ export const assets = {
     web,
     prog,
     EXC,
-    JPKU
+    JPKU,
+    cen_icon,
+
 
 
 };
@@ -182,6 +192,9 @@ export const certificateList = [
 ];
 
 export const workData = [
+
+
+    
     {
         title: 'DurAini',
         description: 'LineBot: Leaf Disease Detection | Gold Medal',
@@ -198,24 +211,38 @@ export const workData = [
         button: true,
         type : 'project'
     },
-    
+
     {
-        title: 'FoodCritic',
-        description: 'Restaurant review web application. [Co-Worker]',
-        bgImage: '/fc.png',
-        link: 'https://github.com/HikaruMG/FoodCritic',
+        title: 'SleeplKU Sleepless: Manufacturing Execution System (MES)',
+        description: 'Web Application for monitoring and managing manufacturing processes in real-time.',
+        bgImage: '/sonylp.png',
+        link: 'https://sleeplku.github.io/SleeplKU-MES/',
         button: true,
         type : 'project'
+        ,isFeatured: true
     },
 
     {
         title: 'SLOWoRK',
         description: 'Internship Platform Web Application',
-        bgImage: '/Slowork1.png',
+        bgImage: '/Slowork3.png',
         link: 'https://slowork.disorder3.com/',
         button: true,
         type : 'project'
+        ,isFeatured: true
     },
+    
+    {
+        title: 'FoodCritic',
+        description: 'Restaurant review web application. [Co-Worker]',
+        bgImage: '/fc2.png',
+        link: 'https://github.com/HikaruMG/FoodCritic',
+        button: true,
+        type : 'project'
+        ,isFeatured: true
+    },
+
+    
 
     {
         title: 'ExxonMobil Project Analytic/ML',
@@ -224,6 +251,7 @@ export const workData = [
         link: 'https://corporate.exxonmobil.com/locations/thailand/thailand-news-and-views/viewpoints-and-perspectives/2024/202408-exxonmobil-bootcathon',
         button: true,
         type : 'project'
+        ,isFeatured: true
     },
     {
         title: 'DAT3 - DashBoard',
@@ -232,14 +260,14 @@ export const workData = [
         link: 'https://lookerstudio.google.com/s/qqZbOE_OkmI',
         button: true,
         type : 'project'
+        ,isFeatured: true
     },
     
-    
     {
-        title: 'CMCC I Capital Market Case',
-        description: 'Idea Pitching - Advertisement by AI and Advertisement X Riders',
-        bgImage: '/blueoc.png',
-        link: 'https://www.canva.com/design/DAG5QsfWGjE/i7NOG2k5ODhRIYMYN7d5GQ/edit?utm_content=DAG5QsfWGjE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
+        title: "Sony Smart Factory Hackathon 2025",
+        description: "AI-powered dashboard featuring context-aware analytics and automated reporting. Optimizes production and handles material delays.",
+        bgImage: "./SonyHKT2025.jpg",
+        link: 'https://www.facebook.com/share/p/1Box29E2Z4/',
         button: true,
         type : 'competition'
     },
@@ -254,13 +282,14 @@ export const workData = [
     },
 
     {
-        title: 'ExxonMobil Bootcathon 2024',
-        description: 'Analytic/ML',
-        bgImage: '/IMG_20240629_123952.jpg',
-        link: 'https://corporate.exxonmobil.com/locations/thailand/thailand-news-and-views/viewpoints-and-perspectives/2024/202408-exxonmobil-bootcathon',
+        title: 'KUTECH-TechCamp#4',
+        description: 'Mentor & Staff @HWP',
+        bgImage: '/hwpkutech.jpg',
+        link: 'https://hwp.ac.th/image/16223/?fbclid=IwY2xjawLZ_bdleHRuA2FlbQIxMABicmlkETF6aDFsMWN4aXlUMm5lUGFOAR4ASHLdb2VnQAghHCU1_i0LXV4Gh45Ha3d9Jlwn9XO-RLLLuFsX6OqP6VHgMg_aem_FLFmAeL4c8d99HgCrQA5Ag',
         button: true,
         type : 'competition'
     },
+
     {
         title: 'CUHighTech-2024',
         description: 'IT Service Management (ITSM)',
@@ -269,20 +298,22 @@ export const workData = [
         button: true,
         type : 'competition'
     },
+
+
     {
-        title: 'KUTECH-BootCamp2025',
-        description: 'TA : DataSci/ML @KU',
-        bgImage: '/kuthbc.png',
-        link: 'https://tech.nisit.ku.ac.th/',
+        title: 'ExxonMobil Bootcathon 2024',
+        description: 'Analytic/ML',
+        bgImage: '/IMG_20240629_123952.jpg',
+        link: 'https://corporate.exxonmobil.com/locations/thailand/thailand-news-and-views/viewpoints-and-perspectives/2024/202408-exxonmobil-bootcathon',
         button: true,
         type : 'competition'
     },
 
     {
-        title: 'KUTECH-TechCamp#4',
-        description: 'Mentor & Staff @HWP',
-        bgImage: '/hwpkutech.jpg',
-        link: 'https://hwp.ac.th/image/16223/?fbclid=IwY2xjawLZ_bdleHRuA2FlbQIxMABicmlkETF6aDFsMWN4aXlUMm5lUGFOAR4ASHLdb2VnQAghHCU1_i0LXV4Gh45Ha3d9Jlwn9XO-RLLLuFsX6OqP6VHgMg_aem_FLFmAeL4c8d99HgCrQA5Ag',
+        title: 'KUTECH-BootCamp2025',
+        description: 'TA : DataSci/ML @KU',
+        bgImage: '/kuthbc.png',
+        link: 'https://tech.nisit.ku.ac.th/',
         button: true,
         type : 'competition'
     },
@@ -294,13 +325,17 @@ export const workData = [
         link: 'https://hwp.ac.th/image/16223/?fbclid=IwY2xjawLZ_bdleHRuA2FlbQIxMABicmlkETF6aDFsMWN4aXlUMm5lUGFOAR4ASHLdb2VnQAghHCU1_i0LXV4Gh45Ha3d9Jlwn9XO-RLLLuFsX6OqP6VHgMg_aem_FLFmAeL4c8d99HgCrQA5Ag',
         button: true,
         type : 'competition'
+    },
+
+    {
+        title: 'CMCC I Capital Market Case',
+        description: 'Idea Pitching - Advertisement by AI and Advertisement X Riders',
+        bgImage: '/Planb.png',
+        link: 'https://www.canva.com/design/DAG5QsfWGjE/i7NOG2k5ODhRIYMYN7d5GQ/edit?utm_content=DAG5QsfWGjE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
+        button: true,
+        type : 'competition'
     }
-
-    
-
-    
-    
-    
+  
 ]
 
 export const serviceData = [
@@ -311,9 +346,11 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Python, C, C++, Pandas, MySQL, Scikit-learn, TensorFlow, OpenCV, Looker Studio, Power BI' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor of Engineering Program in Computer Engineering' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Python, C, C++, SQL' },
+    { icon: assets.cen_icon, iconDark: assets.code_icon_dark, title: 'Frameworks & Libraries', description: 'Pandas, Scikit-learn, TensorFlow, OpenCV' },
+    //{ icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor of Engineering Program in Computer Engineering' },
+    { icon: assets.tools_icon, iconDark: assets.tools_icon_dark, title: "Tools & Platforms", description: 'VSCode, Git, Docker, Firebase, MySQL, Looker' },
+    // { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
 export const toolsData = [
@@ -330,4 +367,66 @@ export const LibrariesAndFrameworks = [
 
 export const Databases = [
     assets.EXC, assets.vscode, assets.git, assets.DK, assets.firebase, assets.mySQL, assets.LK
+];
+
+export const slidepicture = [
+    {
+        title: 'Sony Smart Factory Hackathon 2025',
+        description: 'AI-Driven Smart Dashboard & Adaptive Production Optimization',
+        bgImage: assets.SonyHKT,
+        link: 'https://www.facebook.com/share/p/1Box29E2Z4/',
+        isFeatured: true
+    },
+    {
+        title: 'DurAini',
+        bgImage: '/IMG_0746.png',
+        description: 'LineBot: Leaf Disease Detection | Gold Medal',
+        link: 'https://github.com/HikaruMG/DurAIni',
+        isFeatured: true
+    },
+    {
+        title: 'KU-JCC',
+        description: 'Idea Pitching – Developed a gait analysis system using CCTV to help prevent accidents among elderly people living alone.',
+        bgImage: '/KUJCC.jpg',
+        link: 'https://www.facebook.com/share/p/179trY7nBC/'
+        
+    },
+
+    {
+        title: 'KUTECH-TechCamp#4',
+        description: 'Mentor & Staff @HWP',
+        bgImage: '/hwpkutech.jpg',
+        link: 'https://hwp.ac.th/image/16223/?fbclid=IwY2xjawLZ_bdleHRuA2FlbQIxMABicmlkETF6aDFsMWN4aXlUMm5lUGFOAR4ASHLdb2VnQAghHCU1_i0LXV4Gh45Ha3d9Jlwn9XO-RLLLuFsX6OqP6VHgMg_aem_FLFmAeL4c8d99HgCrQA5Ag'
+    },   
+
+    {
+        title: 'CCMC | Capital Market Case',
+        description: 'Idea Pitching - Advertisement by AI and Advertisement X Riders',
+        bgImage: '/Planb.png',
+        link: 'https://www.canva.com/design/DAG5QsfWGjE/i7NOG2k5ODhRIYMYN7d5GQ/edit?utm_content=DAG5QsfWGjE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
+    },
+
+    {
+        title: 'ExxonMobil Bootcathon 2024',
+        description: 'Analytic/ML',
+        bgImage: '/IMG_20240629_123952sl.jpg',
+        link: 'https://corporate.exxonmobil.com/locations/thailand/thailand-news-and-views/viewpoints-and-perspectives/2024/202408-exxonmobil-bootcathon'
+        ,isFeatured: true
+    },
+    {
+        title: 'CUHighTech-2024',
+        description: 'IT Service Management (ITSM)',
+        bgImage: '/IMG_0748sl.jpg',
+        link: 'https://www.opl.to/hightech.chula?fbclid=IwY2xjawLUZflleHRuA2FlbQIxMABicmlkETFZbzIyOERlT1Nva01GRkdWAR6VVupowYMjo9JYhGu0L9-XxI3ho6ykOsISC94a2FvzS0saOMPgUDh7cmepiA_aem_FjLhvsMWkyy1xo_s-Ak4Tw'
+        ,isFeatured: true
+    },
+    {
+        title: 'KUTECH-BootCamp2025',
+        description: 'TA : DataSci/ML @KU',
+        bgImage: '/kuthbc.png',
+        link: 'https://tech.nisit.ku.ac.th/'
+    },
+
+
+    
 ];

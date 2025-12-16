@@ -28,9 +28,10 @@ const Services = () => {
       whileInView={{ opacity: 1}}
       transition={{ duration: 0.5, delay: 0.7 }}
       className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-        I offer data-driven solutions through machine learning, image processing, and data visualization. 
-        I specialize in analyzing data, building ML models, 
-        and creating insightful dashboards to support smarter decision-making.</motion.p>
+        I integrate software engineering principles with data science to deliver robust,
+         data-driven solutions. I specialize in developing scalable applications,
+          building ML models, and creating insightful dashboards to support
+           smarter decision-making</motion.p>
 
         <motion.div
         initial={{ opacity: 0}}
