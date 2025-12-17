@@ -349,7 +349,7 @@ export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Python, C, C++, SQL' },
     { icon: assets.cen_icon, iconDark: assets.code_icon_dark, title: 'Frameworks & Libraries', description: 'Pandas, Scikit-learn, TensorFlow, OpenCV' },
     //{ icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor of Engineering Program in Computer Engineering' },
-    { icon: assets.tools_icon, iconDark: assets.tools_icon_dark, title: "Tools & Platforms", description: 'VSCode, Git, Docker, Firebase, MySQL, Looker' },
+    { icon: assets.tools_icon, iconDark: assets.tools_icon, title: "Tools & Platforms", description: 'VSCode, Git, Docker, Firebase, MySQL, Looker' },
     // { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
