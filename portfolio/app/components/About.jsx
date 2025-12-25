@@ -39,11 +39,13 @@ const About = ({isDarkMode}) => {
         transition={{ duration: 0.6, delay: 0.8 }}
         className='flex-1'>
             <p className='mb-10 max-w-2xl font-Ovo'>
-              Hello, I'm a Computer Engineering student at Kasetsart University with a strong interest 
-              in software development, particularly in Python, C++, and image processing. 
-              I'm currently seeking an internship where I can apply my programming skills, 
-              build real-world software solutions, and further strengthen my technical foundation. 
-              Highly motivated, able to work under pressure, and effective in collaborative problem-solving environments.
+              Hello, I'm a Computer Engineering student at Kasetsart University with a strong focus 
+              on data-driven software engineering. I specialize in building scalable software solutions 
+              by transforming data into actionable insights, with hands-on experience in Python, C++, 
+              and data-centric image processing. I am seeking a co-operative education opportunity 
+              where I can apply data-informed decision-making to real-world systems, 
+              strengthen my software architecture skills, and contribute effectively in collaborative, 
+              fast-paced environments.
             </p>
 
             <motion.ul

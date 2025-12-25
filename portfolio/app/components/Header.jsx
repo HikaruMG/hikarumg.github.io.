@@ -56,7 +56,7 @@ const Header = () => {
       whileInView={{y: 0, opacity: 1}}
       transition={{ duration: 0.8, delay: 0.5 }}
       className='text-3xl sm:text-6xl lg:text-[45px] font-Ovo'>
-        Software & Data Scientist specializing in Machine Learning and Image Processing </motion.h1>
+        Software Engineering & Applied Data Science specializing in Machine Learning and Image Processing </motion.h1>
         <motion.p 
           initial={{opacity: 0 }}
           whileInView={{opacity: 1}}
