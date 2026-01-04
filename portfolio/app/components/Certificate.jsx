@@ -10,6 +10,7 @@ const Certificate = () => {
     const [selectedYear, setSelectedYear] = useState(2024);
     const years = [...new Set(certificateList.map(cert => cert.year))];
     const filteredCerts = certificateList.filter(cert => cert.year === selectedYear);
+    const allCerts = certificateList; // สำหรับการปริ้น แสดงทั้งหมด
 
 
 
@@ -20,22 +21,22 @@ const Certificate = () => {
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className='text-center mb-2 text-lg font-Ovo'>Certificates</motion.h3>
+              className='text-center mb-2 text-lg font-Ovo print:hidden'>Certificates</motion.h3>
         <motion.h2 
 
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className='text-center text-5xl font-Ovo'>What I've Achieved</motion.h2>
+            className='text-center text-5xl font-Ovo print:hidden'>What I've Achieved</motion.h2>
         <motion.p
               initial={{ opacity: 0}}
               whileInView={{ opacity: 1}}
               transition={{ duration: 0.5, delay: 0.7 }}
-              className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
+              className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo print:hidden'>
                 Courses and certificates I’ve completed to strengthen my expertise.
         </motion.p>
 
-        <motion.div className="flex flex-wrap justify-center gap-4 mb-10"
+        <motion.div className="flex flex-wrap justify-center gap-4 mb-10 print:hidden"
             initial={{ opacity: 0}}
               whileInView={{ opacity: 1}}
               transition={{ duration: 0.5, delay: 0.9 }}
@@ -56,7 +57,7 @@ const Certificate = () => {
         initial={{ opacity: 0}}
         whileInView={{ opacity: 1}}
         transition={{ duration: 0.6, delay: 0.9 }}
-        className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 my-10 dark:text-black'>
+        className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 my-10 dark:text-black print:hidden'>
           {filteredCerts.map((cert, index) =>(
             <motion.div
               whileHover={{ scale: 1.05 }}
@@ -77,6 +78,49 @@ const Certificate = () => {
             </motion.div>
           ))}
         </motion.div >
+        
+        {/* สำหรับการปริ้น - แสดงแยกตามปี */}
+        <div className='hidden print:block'>
+          {years.sort((a, b) => b - a).map((year, index) => (
+            <div key={year} id={`print-certificates-${year}`} className='print-section mb-8' style={index > 0 ? { pageBreakBefore: 'always' } : {}}>
+              <h3 className='text-center mb-2 text-lg font-Ovo'>
+                Certificates
+              </h3>
+              <h2 className='text-center text-5xl font-Ovo mb-6'>
+                What I've Achieved
+              </h2>
+              <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
+                Courses and certificates I've completed to strengthen my expertise.
+              </p>
+              <h3 className='text-center text-2xl font-Ovo mb-6'>{year}</h3>
+              <motion.div 
+              initial={{ opacity: 0}}
+              whileInView={{ opacity: 1}}
+              transition={{ duration: 0.6, delay: 0.9 }}
+              className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 my-10 dark:text-black'>
+                {allCerts.filter(cert => cert.year === year).map((cert, index) =>(
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.3 }}
+                    className="rounded-lg relative cursor-pointer group"
+                    key={index}>
+                    <div className="rounded-md overflow-hidden">
+                      <a href={cert.image.src} target="_blank" rel="noopener noreferrer">
+                        <Image
+                          src={cert.image}
+                          alt={cert.title}
+                          className="w-full h-auto rounded-lg"
+                          sizes="(max-width: 768px) 100vw, 33vw"
+                          style={{ objectFit: 'contain' }}
+                        />
+                      </a>
+                    </div>
+                  </motion.div>
+                ))}
+              </motion.div >
+            </div>
+          ))}
+        </div>
     </div>
   );
 };
