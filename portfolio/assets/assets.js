@@ -371,21 +371,27 @@ export const Databases = [
 
 export const slidepicture = [
     {
-        title: 'Sony Smart Factory Hackathon 2025',
+        title: 'Sony Smart Factory Hackathon 2025 (1st Place)',
         description: 'AI-Driven Smart Dashboard & Adaptive Production Optimization',
         bgImage: assets.SonyHKT,
         link: 'https://www.facebook.com/share/p/1Box29E2Z4/',
         isFeatured: true
     },
     {
-        title: 'DurAini',
+        title: 'DurAini (Gold Medal)',
         bgImage: '/IMG_0746.png',
         description: 'LineBot: Leaf Disease Detection | Gold Medal',
         link: 'https://github.com/HikaruMG/DurAIni',
         isFeatured: true
     },
     {
-        title: 'KU-JCC',
+        title: 'CCMC | Capital Market Case (Idea Pitching)',
+        description: 'Idea Pitching - Advertisement by AI and Advertisement X Riders',
+        bgImage: '/Planb.png',
+        link: 'https://www.canva.com/design/DAG5QsfWGjE/i7NOG2k5ODhRIYMYN7d5GQ/edit?utm_content=DAG5QsfWGjE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
+    },
+    {
+        title: 'KU-JCC (Idea Pitching)',
         description: 'Idea Pitching – Developed a gait analysis system using CCTV to help prevent accidents among elderly people living alone.',
         bgImage: '/KUJCC.jpg',
         link: 'https://www.facebook.com/share/p/179trY7nBC/'
@@ -399,12 +405,7 @@ export const slidepicture = [
         link: 'https://hwp.ac.th/image/16223/?fbclid=IwY2xjawLZ_bdleHRuA2FlbQIxMABicmlkETF6aDFsMWN4aXlUMm5lUGFOAR4ASHLdb2VnQAghHCU1_i0LXV4Gh45Ha3d9Jlwn9XO-RLLLuFsX6OqP6VHgMg_aem_FLFmAeL4c8d99HgCrQA5Ag'
     },   
 
-    {
-        title: 'CCMC | Capital Market Case',
-        description: 'Idea Pitching - Advertisement by AI and Advertisement X Riders',
-        bgImage: '/Planb.png',
-        link: 'https://www.canva.com/design/DAG5QsfWGjE/i7NOG2k5ODhRIYMYN7d5GQ/edit?utm_content=DAG5QsfWGjE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
-    },
+
 
     {
         title: 'ExxonMobil Bootcathon 2024',

@@ -14,7 +14,7 @@ const Header = () => {
     // Auto-advance slides every 4 seconds
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length)
-    }, 4000)
+    }, 7000)
     
     return () => clearInterval(interval)
   }, [slides.length])
@@ -56,14 +56,14 @@ const Header = () => {
       whileInView={{y: 0, opacity: 1}}
       transition={{ duration: 0.8, delay: 0.5 }}
       className='text-3xl sm:text-6xl lg:text-[45px] font-Ovo'>
-        Software Engineering & Applied Data Science specializing in Machine Learning and Image Processing </motion.h1>
+        Software Engineer & Applied Data Scientist </motion.h1>
         <motion.p 
           initial={{opacity: 0 }}
           whileInView={{opacity: 1}}
           transition={{ duration: 0.6, delay: 0.7 }}
           className='max-w-2xl mx-auto font-Ovo'>
-        🌱 I’m currently learning AI Deep Learning, Algorithm, Software Engineer <br></br>
-        👯 I am a researcher at DASTAR & ISAAC Laboratory. <br></br>
+        🌱 I’m currently learning Software Engineer & Data Pipeline <br></br>
+        👯 I am a researcher at DASTAR & ISAAC Laboratory @ Kasetsart University <br></br>
         {/* 👨‍🎓 A Student in Kasetsart University   */}
         </motion.p>
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
