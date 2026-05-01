@@ -75,3 +75,112 @@
 
 }
 
+@media print {
+  html, body {
+    height: auto !important;
+    overflow: visible !important;
+    zoom: 75%;
+  }
+
+  * {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  /* Show images on print */
+  img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: 100%;
+    height: auto;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Show background images */
+  div[style*="backgroundImage"] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Force all elements to preserve colors and backgrounds */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  /* Hide navbar on print */
+  nav {
+    display: none !important;
+  }
+
+  /* Zoom settings for specific sections */
+  
+  #about {
+    zoom: 105% !important;
+  }
+  #services {
+    zoom: 105% !important;
+  }
+  /* Page break for print sections */
+  #print-competitions {
+    page-break-after: always;
+  }
+
+  #print-projects {
+    page-break-before: always;
+  }
+
+  /* Certificate page breaks */
+  #print-certificates-2024,
+  #print-certificates-2023,
+  #print-certificates-2022,
+  #print-certificates-2021,
+  #print-certificates-2020 {
+    page-break-before: always;
+  }
+
+  /* Page breaks for each section */
+  #header {
+    page-break-after: always;
+  }
+
+  #about {
+    page-break-before: always;
+    page-break-after: always;
+  }
+
+  #services {
+    page-break-before: always;
+    page-break-after: always;
+  }
+
+  #work {
+    page-break-before: always;
+    page-break-after: always;
+  }
+
+  #certificate {
+    page-break-before: always;
+    page-break-after: always;
+  }
+
+  #contact {
+    page-break-before: auto;
+    page-break-after: auto;
+  }
+
+  #footer {
+    page-break-before: auto;
+  }
+}
+
+
