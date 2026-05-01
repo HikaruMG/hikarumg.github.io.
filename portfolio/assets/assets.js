@@ -377,25 +377,38 @@ export const slidepicture = [
         link: 'https://www.facebook.com/share/p/1Box29E2Z4/',
         isFeatured: true
     },
+
     {
         title: 'DurAini (Gold Medal)',
-        bgImage: '/IMG_0746.png',
+        bgImage: '/IMG_0746sl.png',
         description: 'LineBot: Leaf Disease Detection | Gold Medal',
         link: 'https://github.com/HikaruMG/DurAIni',
         isFeatured: true
     },
+
+    {
+        title: 'INNO-vation บ้า-กล้า-คิด 2022 (Corporate Award)',
+        description: 'Hardware & Inno-Thinking Project',
+        bgImage: '/inno.png',
+        link: 'https://mediator.co.th/th/inno-vation-2022-winner-announcement/',
+        isFeatured: true
+    },
+
+    {
+        title: 'KU-JCC (Idea Pitching)',
+        description: 'Idea Pitching – Developed a gait analysis system using CCTV to help prevent accidents among elderly people living alone.',
+        bgImage: '/KUJCC2.png',
+        link: 'https://www.facebook.com/share/p/179trY7nBC/',
+        isFeatured: true
+        
+    },
+
     {
         title: 'CCMC | Capital Market Case (Idea Pitching)',
         description: 'Idea Pitching - Advertisement by AI and Advertisement X Riders',
         bgImage: '/Planb.png',
-        link: 'https://www.canva.com/design/DAG5QsfWGjE/i7NOG2k5ODhRIYMYN7d5GQ/edit?utm_content=DAG5QsfWGjE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
-    },
-    {
-        title: 'KU-JCC (Idea Pitching)',
-        description: 'Idea Pitching – Developed a gait analysis system using CCTV to help prevent accidents among elderly people living alone.',
-        bgImage: '/KUJCC.jpg',
-        link: 'https://www.facebook.com/share/p/179trY7nBC/'
-        
+        link: 'https://www.canva.com/design/DAG5QsfWGjE/i7NOG2k5ODhRIYMYN7d5GQ/edit?utm_content=DAG5QsfWGjE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
+        isFeatured: true
     },
 
     {
