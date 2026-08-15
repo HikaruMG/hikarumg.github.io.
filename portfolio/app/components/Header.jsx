@@ -56,14 +56,16 @@ const Header = () => {
       whileInView={{y: 0, opacity: 1}}
       transition={{ duration: 0.8, delay: 0.5 }}
       className='text-3xl sm:text-6xl lg:text-[45px] font-Ovo'>
-        Software Engineer & Applied Data Scientist </motion.h1>
+        Software Engineer </motion.h1>
         <motion.p 
           initial={{opacity: 0 }}
           whileInView={{opacity: 1}}
           transition={{ duration: 0.6, delay: 0.7 }}
           className='max-w-2xl mx-auto font-Ovo'>
-        🌱 I’m currently learning Software Engineer & Data Pipeline <br></br>
-        👯 I am a researcher at DASTAR & ISAAC Laboratory @ Kasetsart University <br></br>
+        
+        Building practical software with Python and Business Solutions <br></br>
+        Computer Engineering Student @ Kasetsart University 
+        {/* 👯 I am a researcher at DASTAR & ISAAC Laboratory @ Kasetsart University <br></br> */}
         {/* 👨‍🎓 A Student in Kasetsart University   */}
         </motion.p>
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
@@ -83,7 +85,7 @@ const Header = () => {
             // href="/resume-resume.pdf" download 
             href="#contact"
             className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 dark:text-black bg-white'
-            >Request Resume <Image src={assets.download_icon} alt="" 
+            >View My Resume <Image src={assets.download_icon} alt="" 
             className='w-4'/></motion.a>
         </div>
       </div>
